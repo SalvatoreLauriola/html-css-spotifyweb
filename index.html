@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+
     <div id="app">
         <!-- Main content -->
         <main id="main-window">
             <!-- Sidebar -->
             <aside id="sidebar">
-                <div class="sidebar-top">Logo e Nav</div>
-
-                <div class="sidebar-bottom">Account</div>
+                <div class="sidebar-top">
+                  <div class="logo-spoti">
+                    <img src="img/logo.svg" alt="logo">
+                  </div>
+                  <div class="home">
+                    <ul>
+                      <li>
+                        <a href="#"><img src="img/home.svg" alt="home">Home</a>
+                      </li>
+                      <li><a href="#"><img src="img/search.svg" alt="cerca">Cerca</a></li>
+                      <li><a href="#"><img src="img/libreria.svg" alt="home">La tua libreria</a></li>
+                    </ul>
+                    <h5>PLAYLIST</h5>
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fas fa-plus-square"></i>Crea Playlist</a>
+                      </li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                      <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sidebar-bottom">
+                  <div class="download">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                    <a href="#">Installa app</a>
+                  </div>
+                  <div class="john">
+                    <a href="#"><img src="img/profile.svg" alt="profile">John Doe</a>
+                  </div>
+                </div>
             </aside>
 
             <!-- Content -->
             <div id="content">
-                <div class="content-top-bar">Top bare here</div>
+                <div class="content-top-bar">
+                  <a href="#">EFFETTUA L'UPGRADE</a>
+                </div>
                 <div class="scrollable">
                     <nav class="content-menu">Menu</nav>
 
@@ -33,18 +70,7 @@
                     <section class="content-category">
                         <h2>Category title</h2>
                     </section>
-                    <section class="content-category">
-                        <h2>Category title</h2>
-                    </section>
-                    <section class="content-category">
-                        <h2>Category title</h2>
-                    </section>
-                    <section class="content-category">
-                        <h2>Category title</h2>
-                    </section>
-                    <section class="content-category">
-                        <h2>Category title</h2>
-                    </section>
+
                 </div>
             </div>
         </main>

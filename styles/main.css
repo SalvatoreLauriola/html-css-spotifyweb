@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -16,13 +17,53 @@ body {
     height: 100vh;
 }
 
-
 /* MAIN WINDOW */
 #main-window {
     flex-grow: 1;
     display: flex;
 }
 
+.logo-spoti img {
+  width: 160px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.home img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+
+
+
+
+.home ul li a {
+  display: flex;
+  text-decoration: none;
+  color: #747474;
+  align-items: center;
+}
+.home ul li a:hover {
+  color: white;
+}
+
+.home ul li:hover {
+
+  border-left: 3px solid #acfe2e;
+}
+.home ul li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.home h5 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.home ul {
+  list-style: none;
+}
 
 /* SIDEBAR */
 #sidebar {
@@ -33,12 +74,16 @@ body {
 
 .sidebar-top {
     flex-grow: 1;
-    background: #444;
+    background: #000;
+    padding: 15px 0;
 }
 
 .sidebar-bottom {
-    height: 80px; /*debug*/
-    background: #222;
+
+    background: black;
+    padding-left: 20px;
+
+
 }
 
 /* CONTENT */
@@ -54,8 +99,10 @@ body {
     left: 0;
     width: 100%;
     height: 90px;
-    background: rgba(100, 50,0, .5);
+    background: black;
     z-index: 1;
+    text-align: right;
+    padding: 20px;
 }
 
 #content .scrollable {
@@ -70,7 +117,7 @@ body {
 }
 
 .content-menu {
-    height: 80px; /*debug*/
+
     background: #222;
 }
 
@@ -83,4 +130,65 @@ body {
 #player {
     height: 80px; /*debug*/
     background: #333;
+}
+
+.home ul li i {
+
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.home ul li a {
+  font-size: 12px;
+  padding: 7px 7px 0;
+}
+
+.download i {
+  font-size: 12px;
+}
+.download {
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+.download a {
+  font-size: 14px;
+  color: #747474;
+  text-decoration: none;
+}
+
+.download a:hover {
+  color: white;
+}
+.john img {
+  margin: 5px;
+  background-color: grey;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.john a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+}
+
+.john {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.content-top-bar a {
+  text-decoration: none;
+  color: white;
+ font-size: 13px;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.content-top-bar a:hover {
+  background-color: #acfe2e
 }
