@@ -10,7 +10,9 @@ body {
     color: #fff;
 }
 /* Da ordinare meglio */
-
+.visible-sm {
+  display: block;
+}
 
 /* LAYOUT */
 #app {
@@ -382,24 +384,33 @@ body {
   margin-right: 20px;
 }
 
+.hidden {
+  display: none;
+}
 
 
+.hidden-sm img {
+  width: 10px;
+}
 /* Media Query */
 
-@media all and (min-width:1024) {
+@media all and (min-width:1024px) {
   .visible-sm {
     display: block;
   }
   .navigation {
     position: relative;
   }
-
+  .hidden-sm {
+    display: none;
+  }
   .navigation-link span {
     display: block;
   }
   .playlist {
     display: block;
   }
+
 
 }
 
@@ -411,6 +422,11 @@ body {
     margin-bottom: 30px;
     padding: 10px 10px 10px 0;
   }
+  .hidden-sm  {
+    display: none;
+
+  }
+
 }
 
 @media all and (max-width: 600px) {
@@ -433,6 +449,14 @@ body {
   }
   .playlist {
     display: none;
+  }
+  .hidden-sm  {
+    display: block;
+
+  }
+  .logo-spoti img {
+    width: 70px;
+    padding-left: 25px;
   }
 
 
