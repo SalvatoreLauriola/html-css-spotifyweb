@@ -459,6 +459,41 @@ body {
     padding-left: 25px;
   }
 
+  .content-menu {
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 20px;
+  }
+  .line {
+    position: relative;
+    background-color: grey;
+    height: 3px;
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
+  .line:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: white;
+  }
+
+  .player-bar:hover .line:before,
+  .settings:hover .line:before {
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
 
 }
