@@ -81,7 +81,6 @@ body {
 }
 
 .sidebar-bottom {
-
     background: black;
     padding-left: 20px
   }
@@ -124,8 +123,11 @@ body {
 
 /* BOTTOM PLAYER */
 #player {
-    height: 80px; /*debug*/
+
     background: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .home ul li i {
@@ -238,6 +240,7 @@ body {
 
 .album img {
   max-width: 100%;
+  display: block;
 }
 
 .album h5 {
@@ -255,6 +258,124 @@ body {
   padding-top: 15px;
 }
 
-.content-category:nth-last-child(1) img {
+.content-category:nth-last-child(1) img,
+.content-category:nth-last-child(1) .img-hover .overlay {
   border-radius: 50%;
+}
+
+.img-hover {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay i {
+  color: white;
+  font-size: 40px;
+  display: none;
+}
+
+.img-hover:hover .overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.img-hover:hover .overlay i {
+  display: block;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+}
+
+.song img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.text {
+  margin-right: 30px;
+}
+
+.btn-spoti a{
+  margin-right: 10px;
+  color: white;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+.icons a {
+  color: white;
+  font-size: 20px;
+}
+
+.icons .fa-play-circle{
+  font-size: 30px;
+}
+
+.player-bar {
+  display: flex;
+  align-items: center;
+}
+
+.play {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.line {
+  position: relative;
+  background-color: grey;
+  height: 3px;
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: white;
+}
+
+.player-bar:hover .line:before,
+.settings:hover .line:before {
+  content: '';
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  flex-basis: 300px;
+
+}
+
+.buttons-settings  {
+  display: flex;
+}
+
+.settings i {
+  color: white;
+  margin-right: 20px;
 }
