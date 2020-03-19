@@ -9,6 +9,8 @@
 body {
     color: #fff;
 }
+/* Da ordinare meglio */
+
 
 /* LAYOUT */
 #app {
@@ -69,7 +71,7 @@ body {
 
 /* SIDEBAR */
 #sidebar {
-    flex-basis: 230px; /* larghezza sidebar */
+
     display: flex;
     flex-direction: column;
 }
@@ -146,7 +148,7 @@ body {
 }
 
 .download {
-  border-bottom: 1px solid white;
+
   padding: 10px;
 }
 
@@ -337,8 +339,8 @@ body {
   background-color: grey;
   height: 3px;
   flex-grow: 1;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .line:before {
@@ -378,4 +380,61 @@ body {
 .settings i {
   color: white;
   margin-right: 20px;
+}
+
+
+
+/* Media Query */
+
+@media all and (min-width:1024) {
+  .visible-sm {
+    display: block;
+  }
+  .navigation {
+    position: relative;
+  }
+
+  .navigation-link span {
+    display: block;
+  }
+  .playlist {
+    display: block;
+  }
+
+}
+
+@media all and (max-width: 1024px) {
+  .album {
+    flex-basis: calc(100% / 4);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .album {
+    flex-basis: calc(100% / 2);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 0;
+  }
+  .visible-sm {
+    display: none;
+  }
+  .navigation {
+    position: relative;
+  }
+
+  .navigation-link span {
+    display: none;
+  }
+  .playlist {
+    display: none;
+  }
+
+
+
 }
