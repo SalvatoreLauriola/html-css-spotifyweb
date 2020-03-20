@@ -332,7 +332,7 @@ body {
 }
 
 .play {
-  flex-basis: 40%;
+  flex-basis: 600px;
   text-align: center;
 }
 
@@ -341,8 +341,6 @@ body {
   background-color: grey;
   height: 3px;
   flex-grow: 1;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .line:before {
@@ -371,7 +369,7 @@ body {
 .settings {
   display: flex;
   align-items: center;
-  flex-basis: 300px;
+  /* flex-basis: 300px; */
 
 }
 
@@ -391,6 +389,11 @@ body {
 
 .hidden-sm img {
   width: 10px;
+}
+
+.line.line-inline {
+  /* flex-grow: 0; */
+  width: 100px;
 }
 /* Media Query */
 
@@ -463,14 +466,6 @@ body {
     text-align: center;
     padding-top: 30px;
     margin-right: 20px;
-  }
-  .line {
-    position: relative;
-    background-color: grey;
-    height: 3px;
-    flex-grow: 1;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 
   .line:before {
